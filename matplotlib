@@ -1,0 +1,762 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "?os.path.join"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "?os.path"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import mglearn\n",
+    "adilt_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data'\n",
+    "                         )"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "adult_path"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "display(data.head())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import IPython"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import IPython.display as display"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "display(data.head())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "display(data.head())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "print(data.head())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data[['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data[['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']]\n",
+    "data"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data[['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']]\n",
+    "data.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data[['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']]\n",
+    "dim(data)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "import numpy as np\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data[['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "import numpy as np\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data[['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']]\n",
+    "IPython.display(data.head())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "import numpy as np\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data[['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']]\n",
+    "IPython.lib.display(data.head())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "import numpy as np\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data[['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']]\n",
+    "IPython.core.display(data.head())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "import pandas as pd\n",
+    "import mglearn\n",
+    "import numpy as np\n",
+    "adult_path = os.path.join(mglearn.datasets.DATA_PATH,'adult.data')\n",
+    "data = pd.read_csv(\n",
+    "     adult_path, header=None, index_col=False,\n",
+    "    names=['age', 'workclass', 'fnlwgt', 'education',  'education-num',\n",
+    "           'marital-status', 'occupation', 'relationship', 'race', 'gender',\n",
+    "           'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',\n",
+    "           'income'])\n",
+    "data = data[['age','workclass','education','gender','hours-per-week',\n",
+    "           'occupation','income']]\n",
+    "data.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data.gender"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "np.bincount(data.gender)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data.gender.value_counts()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data_dummies = pd.get_dummies(data)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data_dummies"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data_dummies.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data_dummies.columns"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data.values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data.values.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "data.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "features = data_dummies.loc[:,'age':'occupation_ Transport-moving']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "features = data_dummies.loc[:,'age':'occupation_ Transport-moving']\n",
+    "features"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "features = data_dummies.loc[:,'age':'occupation_ Transport-moving']\n",
+    "features.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "features = data_dummies.loc[:,'age':'occupation_ Transport-moving']\n",
+    "X= features.values()\n",
+    "y = data_dummies['income_ >50K'].values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "features = data_dummies.loc[:,'age':'occupation_ Transport-moving']\n",
+    "X= features.values\n",
+    "y = data_dummies['income_ >50K'].values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "features = data_dummies.loc[:,'age':'occupation_ Transport-moving']\n",
+    "X= features.values\n",
+    "y = data_dummies['income_ >50K'].values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "X.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "y.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from sklearn.linear_model import LogisticRegression\n",
+    "from sklearn.model_selection import train_test_split\n",
+    "X_train,X_test,y_train,y_test = train_test_split(X,y)\n",
+    "clf = LogisticRegression()."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from sklearn.linear_model import LogisticRegression\n",
+    "from sklearn.model_selection import train_test_split\n",
+    "X_train,X_test,y_train,y_test = train_test_split(X,y)\n",
+    "clf = LogisticRegression().fit(X_train,y_train)\n",
+    "print('Test accuracy {:.3f}'.format(clf.score(X_test,y_test)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "demo_df = pd.DataFrame({}'Integer Feature' : [0,1,2,1],\n",
+    "                      'Categorical Feature' : ['socks','fox','socks','box']})"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "demo_df = pd.DataFrame({'Integer Feature' : [0,1,2,1],\n",
+    "                      'Categorical Feature' : ['socks','fox','socks','box']})"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "demo_df = pd.DataFrame({'Integer Feature' : [0,1,2,1],\n",
+    "                      'Categorical Feature' : ['socks','fox','socks','box']})\n",
+    "demo_df"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "demo_df = pd.DataFrame({'Integer Feature' : [0,1,2,1],\n",
+    "                      'Categorical Feature' : ['socks','fox','socks','box']})\n",
+    "pd.get_dummies(demo_df)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "demo_df = pd.DataFrame({'Integer Feature' : [0,1,2,1],\n",
+    "                      'Categorical Feature' : ['socks','fox','socks','box']})\n",
+    "pd.get_dummies(demo_df,columns=['Integer Feature','Categorical Feature'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "X[:,0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "X"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "X.shape"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "X[0,:]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%notebook matplotlib\n",
+    "import matplotlib.pyplot as plt\n",
+    "from sklearn.linear_model import LinearRegression\n",
+    "from sklearn.tree import DecisionTreeRegressor\n",
+    "\n",
+    "X,y = mglearn.datasets.make_wave(n_samples=100)\n",
+    "\n",
+    "line = np.linspace(-3,3,endpoint=False).reshape(-1,1)\n",
+    "plt.figure()\n",
+    "reg = LinearRegression().fit(X,y)\n",
+    "plt.plot(line,reg.predict(line),label='Linear Regressor')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%notebook matplotlib\n",
+    "import matplotlib.pyplot as plt\n",
+    "from sklearn.linear_model import LinearRegression\n",
+    "from sklearn.tree import DecisionTreeRegressor\n",
+    "\n",
+    "X,y = mglearn.datasets.make_wave(n_samples=100)\n",
+    "\n",
+    "line = np.linspace(-3,3,endpoint=False).reshape(-1,1)\n",
+    "plt.figure()\n",
+    "reg = LinearRegression().fit(X,y)\n",
+    "plt.plot(line,reg.predict(line),label='Linear Regressor')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "%notebook matplotlib\n",
+    "import matplotlib.pyplot as plt\n",
+    "from sklearn.linear_model import LinearRegression\n",
+    "from sklearn.tree import DecisionTreeRegressor\n",
+    "\n",
+    "X,y = mglearn.datasets.make_wave(n_samples=100)\n",
+    "\n",
+    "line = np.linspace(-3,3,endpoint=False).reshape(-1,1)\n",
+    "plt.figure()\n",
+    "reg = LinearRegression().fit(X,y)\n",
+    "plt.plot(line,reg.predict(line),label='Linear Regressor')\n",
+    "plt.show()"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
